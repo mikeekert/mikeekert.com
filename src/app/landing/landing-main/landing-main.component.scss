@@ -1,10 +1,11 @@
 #main {
-    height: calc(100vh - 50px);
+    height: calc(100vh);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #252935;
+    border-bottom: #f00 4px solid;
     .blink {
         animation-name: blink;
         animation-iteration-count: infinite;
@@ -20,22 +21,42 @@
         }
     }
     .hero {
+        .hero-image {
+            img {
+                width: 25%;
+            }
+        }
+        .hero-aboutme {
+            margin: 40px 0;
+            button {
+                border: 1px solid white;
+                height: 50px;
+                width: 150px;
+                background-color: #ffffff00;
+                border-radius: 30px;
+                color: #fff;
+                font-size: 1rem;
+            }
+        }
         p {
             font-family: 'Raleway', sans-serif;
             color: white;
             font-size: 5vw;
             font-weight: 400;
             margin: 0;
+            position: relative;
             .red {
                 color: #f00;
             }
         }
     }
 }
-.footer-bar {
+
+.header-bar {
     height: 50px;
     width: 100%;
     background: #1B242F;
+    display: none;
     .fa-bars {
         color: #fff;
         height: 3rem;

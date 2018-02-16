@@ -1,13 +1,25 @@
 #aboutme {
     height: 100vh;
-    .about-content {
-        position: relative;
-        top: 40%;
-        left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
+    color: #000;
+    font-size: 2rem;
+    font-weight: 300;
+    .about-header {
+        padding: 20px 0;
         width: 100%;
-        
-        color: #000;
+    }
+    .about-content {
+        font-size: .75rem;
+    }
+    .about-icontray {
+        justify-content: space-evenly;
+        .fa-angular {
+            color: #b52e31;
+        }
+        .fa-node {
+            color: #44883e;
+        }
+        .fa-sass {
+            color: #c69;
+        }
     }
 }
