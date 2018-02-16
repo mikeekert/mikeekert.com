@@ -1,0 +1,46 @@
+#main {
+    height: calc(100vh - 50px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #252935;
+    .blink {
+        animation-name: blink;
+        animation-iteration-count: infinite;
+        animation-timing-function: cubic-bezier(1, 0, 0, 1);
+        animation-duration: 1s;
+        @keyframes blink {
+            from {
+                opacity: 1.0;
+            }
+            to {
+                opacity: 0.0;
+            }
+        }
+    }
+    .hero {
+        p {
+            font-family: 'Raleway', sans-serif;
+            color: white;
+            font-size: 5vw;
+            font-weight: 400;
+            margin: 0;
+            .red {
+                color: #f00;
+            }
+        }
+    }
+}
+.footer-bar {
+    height: 50px;
+    width: 100%;
+    background: #1B242F;
+    .fa-bars {
+        color: #fff;
+        height: 3rem;
+        width: 1.875em;
+        float: right;
+        margin-right: 25px;
+    }
+}

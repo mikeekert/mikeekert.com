@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import * as $ from 'jquery';
+
 
 @Component({
   selector: 'app-landing-main',
@@ -10,6 +12,9 @@ export class LandingMainComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    $('.vh-fix').each(function(){
+      const h = $(this).height();
+      $(this).height(h);
+     });
   }
-
 }
