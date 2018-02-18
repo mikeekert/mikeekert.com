@@ -1,4 +1,7 @@
 #aboutme {
+    .red {
+        color: #f00;
+    }
     height: 100vh;
     color: #000;
     font-size: 2rem;
@@ -8,18 +11,13 @@
         width: 100%;
     }
     .about-content {
-        font-size: .75rem;
+        font-size: 2vw;
     }
     .about-icontray {
         justify-content: space-evenly;
-        .fa-angular {
-            color: #b52e31;
-        }
-        .fa-node {
-            color: #44883e;
-        }
-        .fa-sass {
-            color: #c69;
+        img {
+            width: 100px;
+            padding: 10px 0;
         }
     }
 }
