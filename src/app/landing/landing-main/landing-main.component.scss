@@ -28,14 +28,28 @@
         }
         .hero-aboutme {
             margin: 40px 0;
-            button {
-                border: 1px solid white;
-                height: 50px;
-                width: 150px;
-                background-color: #ffffff00;
-                border-radius: 30px;
-                color: #fff;
-                font-size: 1rem;
+            display: flex;
+            justify-content: center;
+            a {
+                text-decoration: none;
+                padding: 0 10px;
+                width: 100%;
+                button {
+                    border: 1px solid white;
+                    width: 70%;
+                    background-color: #ffffff00;
+                    border-radius: 30px;
+                    color: #fff;
+                    font-size: 4vw;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    cursor: pointer;
+                    justify-content: center;
+                    span {
+                        padding: 5px;
+                    }
+                }
             }
         }
         p {
@@ -51,7 +65,8 @@
         }
         svg {
             color: #fff;
-            font-size: 3rem;
+            font-size: 1rem;
+            margin: 0 10px;
         }
     }
 }
@@ -60,7 +75,8 @@
     height: 50px;
     width: 100%;
     background: #1B242F;
-    display: none;
+    position: absolute;
+    top: 0;
     .fa-bars {
         color: #fff;
         height: 3rem;

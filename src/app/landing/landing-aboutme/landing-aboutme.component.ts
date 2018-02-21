@@ -12,11 +12,15 @@ export class LandingAboutmeComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    $('.about-icontray').css('flex', '1' );
+
     $('.vh-fix')
     .each(function () {
-      const h = $(this).height() - 4;
+      const h = $(this).height() - 3;
       $(this).height(h);
     });
+
+
   }
 
 }

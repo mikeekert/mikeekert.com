@@ -1,23 +1,51 @@
 #aboutme {
+    font-size: 10vw;
+    font-weight: 600;
+    background-color: #f0f0f0;
+    flex-direction: column;
+    display: flex;
+    height: 100vh;
+    color: #000;
+    .about-box {
+        height:85%;
+        display: flex;
+        flex-direction: column;
+    }
     .red {
         color: #f00;
     }
-    height: 100vh;
-    color: #000;
-    font-size: 2rem;
-    font-weight: 300;
     .about-header {
-        padding: 20px 0;
+        .about-headernav {
+            height: 50px;
+            background-color: black;
+        }
         width: 100%;
+        span {
+            width: 100%;
+        }
     }
     .about-content {
-        font-size: 3vw;
+        font-size: 3.5vw;
+        font-weight: 300;
     }
     .about-icontray {
-        justify-content: space-evenly;
+        .about-iconcontainer {
+            flex: 1;
+            .about-icons {
+                flex-grow: 1;
+                justify-content: space-around;
+                align-items: center;
+                display: flex;
+            }
+            .about-half {
+                img {
+                    width: 50%;
+                }
+            }
+        }
         img {
-            width: 100px;
-            padding: 10px 0;
+            width: 125px;
+            padding: 15px;
         }
     }
 }
