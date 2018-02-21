@@ -8,6 +8,7 @@ export class LandingMainComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {
+    // adjust for screen sizes on mobile
     $('.vh-fix')
       .each(function () {
         const h = $(this).height();
@@ -15,6 +16,7 @@ export class LandingMainComponent implements OnInit {
       });
     AOS.init();
 
+    // added to handle different anchor link formats & errors
     $('a[href*="#"]')
       .not('[href="#"]')
       .not('[href="#0"]')
