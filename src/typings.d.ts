@@ -4,4 +4,4 @@ interface NodeModule {
   id : string;
 }
 
-declare var AOS : any;
+declare var aos : any;
