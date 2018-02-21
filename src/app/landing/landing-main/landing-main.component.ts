@@ -35,11 +35,11 @@ export class LandingMainComponent implements OnInit {
             }, 1000, function () {
               const $target = $(target);
               $target.focus();
-              if ($target.is(':focus')) { // Checking if the target was focused
+              if ($target.is(':focus')) {
                 return false;
               } else {
-                $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
-                $target.focus(); // Set focus again
+                $target.attr('tabindex', '-1');
+                $target.focus();
               }
             });
           }

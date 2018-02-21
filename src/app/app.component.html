@@ -1,5 +1,29 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
-    <app-landing-main></app-landing-main>
-    <app-landing-aboutme></app-landing-aboutme>
+  <div class="header-bar" data-aos="fade-right" data-aos-delay="1200" data-aos-easing="ease-in-sine">
+    <span (click)="show = !show">
+      <i class="fas fa-bars"></i>
+    </span>
+  </div>
+  <div class="nav-overlay" [ngClass]="{show: show, hide: !show}">
+    <ul data-aos="fade-left" [ngClass]="{show: show, hide: !show}">
+      <li>
+        <a href="">
+          About
+        </a>
+      </li>
+      <li>
+        <a href="">
+          Projects
+        </a>
+      </li>
+      <li>
+        <a href="">
+          Contact
+        </a>
+      </li>
+    </ul>
+  </div>
+  <app-landing-main></app-landing-main>
+  <app-landing-aboutme></app-landing-aboutme>
 </div>
